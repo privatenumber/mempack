@@ -1,0 +1,51 @@
+{
+  "name": "mempack",
+  "version": "1.0.0",
+  "description": "Run a Webpack build in-memory",
+  "main": "index.js",
+  "scripts": {
+    "dev": "jest --watchAll",
+    "test": "jest",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/privatenumber/mempack.git"
+  },
+  "author": "Hiroki Osame <hiroki.osame@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/privatenumber/mempack/issues"
+  },
+  "homepage": "https://github.com/privatenumber/mempack#readme",
+  "dependencies": {
+    "@babel/core": "^7.8.7",
+    "@babel/preset-env": "^7.8.7",
+    "babel-helper-vue-jsx-merge-props": "^2.0.3",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-syntax-jsx": "^6.18.0",
+    "babel-plugin-transform-vue-jsx": "^3.7.0",
+    "css-loader": "^3.4.2",
+    "ent": "^2.2.0",
+    "esm": "^3.2.25",
+    "markdown-it-add-attrs": "github:privatenumber/markdown-it-add-attrs",
+    "markdown-it-anchor": "^5.2.5",
+    "mdvue-loader": "github:privatenumber/mdvue-loader",
+    "memfs": "^3.1.2",
+    "postcss-import": "^12.0.1",
+    "postcss-loader": "^3.0.0",
+    "postcss-preset-env": "^6.7.0",
+    "url-loader": "^4.0.0",
+    "vue-loader": "^15.9.1",
+    "vue-template-compiler": "^2.6.11",
+    "webpack": "^5.0.0-beta.14",
+    "webpack-merge": "^4.2.2"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.1",
+    "jest": "^25.1.0",
+    "outdent": "^0.7.1"
+  }
+}
