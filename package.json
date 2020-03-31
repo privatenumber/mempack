@@ -1,8 +1,11 @@
 {
   "name": "mempack",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Run a Webpack build in-memory",
   "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "dev": "jest --watchAll",
     "test": "jest",
