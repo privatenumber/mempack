@@ -16,6 +16,7 @@ const mempack = require('mempack');
 
 	const built = await mempack({
 		files: [
+			// Entry point
 			{
 				name: 'index.js',
 				content: `
