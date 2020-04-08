@@ -2,7 +2,6 @@
 > Run a Webpack build in-memory
 
 ## Install
-
 ```
 $ npm install mempack
 ```
@@ -39,3 +38,5 @@ const mempack = require('mempack');
 })();
 ```
 
+## License
+MIT
