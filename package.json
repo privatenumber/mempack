@@ -30,7 +30,7 @@
     "babel-plugin-transform-vue-jsx": "^3.7.0",
     "css-loader": "^3.4.2",
     "esm": "^3.2.25",
-    "mdvue-loader": "github:privatenumber/mdvue-loader",
+    "md-vue-loader": "^2.0.0",
     "memfs": "^3.1.2",
     "postcss": "^7.0.27",
     "postcss-import": "^12.0.1",
