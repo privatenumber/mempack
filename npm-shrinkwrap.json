@@ -6043,14 +6043,10 @@
         "uc.micro": "^1.0.5"
       }
     },
-    "mdurl": {
-      "version": "1.0.1",
-      "resolved": "https://registry.npmjs.org/mdurl/-/mdurl-1.0.1.tgz",
-      "integrity": "sha1-/oWy7HWlkDfyrf7BAP1sYBdhFS4="
-    },
-    "mdvue-loader": {
-      "version": "github:privatenumber/mdvue-loader#6d2ffa01dd5cc30de032053bcfea0b726eeb4f42",
-      "from": "github:privatenumber/mdvue-loader",
+    "md-vue-loader": {
+      "version": "2.0.0",
+      "resolved": "https://registry.npmjs.org/md-vue-loader/-/md-vue-loader-2.0.0.tgz",
+      "integrity": "sha512-wP8bsS9SB+uMuLtdJrWT3Im/IN1wECkxv66bWLvkwbvkPABh2+A1tYMUlm7bX1IF9WcIv0sdCjLrrLwEf9N6JQ==",
       "requires": {
         "hash-sum": "^2.0.0",
         "loader-utils": "^2.0.0",
@@ -6069,6 +6065,11 @@
           }
         }
       }
+    },
+    "mdurl": {
+      "version": "1.0.1",
+      "resolved": "https://registry.npmjs.org/mdurl/-/mdurl-1.0.1.tgz",
+      "integrity": "sha1-/oWy7HWlkDfyrf7BAP1sYBdhFS4="
     },
     "memfs": {
       "version": "3.1.2",
