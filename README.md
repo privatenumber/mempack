@@ -12,7 +12,6 @@ $ npm install mempack
 const mempack = require('mempack');
 
 (async () => {
-
 	const built = await mempack({
 		files: [
 			// Entry point
@@ -32,8 +31,13 @@ const mempack = require('mempack');
 			},
 		],
 
-		// merge is webpack-merge
-		config: (config, merge) => merge.smart(config, { ... }),
+		// Configure webpack
+		config: ({ config, addons merge }) =>
+
+			addons(config, ['babel', 'vue']), // for adding Babel and Vue (from in lib/addons)
+
+			merge.smart(config, { ... }), // ... or use webpack-merge
+
 	});
 })();
 ```
