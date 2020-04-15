@@ -19,32 +19,8 @@ describe('Basic build', () => {
 					`,
 				},
 			],
+			config: ({ config, addons }) => addons(config, ['babel']),
 		});
-		expect(typeof built).toBe('string');
-		expect(built.length).toBeGreaterThan(1);
-	});
-
-	test('Import CSS', async () => {
-		const built = await mempack({
-			files: [
-				{
-					name: 'index.js',
-					content: outdent`
-					import A from './A.css';
-					console.log(A);
-					`,
-				},
-				{
-					name: 'A.css',
-					content: outdent`
-					.class {
-						color: red;
-					}
-					`,
-				},
-			],
-		});
-
 		expect(typeof built).toBe('string');
 		expect(built.length).toBeGreaterThan(1);
 	});
@@ -73,6 +49,7 @@ describe('Basic build', () => {
 					`,
 				},
 			],
+			config: ({ config, addons }) => addons(config, ['babel', 'vue']),
 		});
 
 		expect(typeof built).toBe('string');
@@ -102,6 +79,7 @@ describe('Basic build', () => {
 					`,
 				},
 			],
+			config: ({ config, addons }) => addons(config, ['babel', 'vue', 'md-vue']),
 		});
 
 		expect(typeof built).toBe('string');
